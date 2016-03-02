@@ -1,0 +1,69 @@
+CACHE MANIFEST
+# sw.bundle: ng-cli
+# sw.version: a23bea650c0602467d902d53a44652043267fe1d
+# sw.file.hash: 5b400279d940fbb500c770e6d978012f95b4aff3
+/app.js
+# sw.file.hash: 8477328c6c8c613532e6008734886981bcc9bd62
+/app.js.map
+# sw.file.hash: d45f22d3e4f70fd0e1121d359fac482c1d114163
+/app.ts
+# sw.file.hash: ad9119a4534611ea337afb4da8cae37a38561424
+/app/another-app.html
+# sw.file.hash: 7a43f2dff288fda7878c874aa8f10b4b41777db9
+/app/another-app.js
+# sw.file.hash: ae72b4afe9e86a6ec465536771cb5a4da8b0f429
+/app/another-app.js.map
+# sw.file.hash: 63249c64456580822b3420303c4e3b1bcff35596
+/app/another-app.spec.js
+# sw.file.hash: 028727bb891fdf4d9a7c306a9e9c7451e1978930
+/app/another-app.spec.js.map
+# sw.file.hash: 2debe713443801dfafe59ef3bec3532623286413
+/app/another-app.spec.ts
+# sw.file.hash: 13124562eed4cb5f8fe0d555c34f9cd4a63eed11
+/app/another-app.ts
+# sw.file.hash: a095ce5ed788746a34a37ed3305e05505aff1e37
+/app/components/myvideo/myvideo.css
+# sw.file.hash: 4fa92466506b9aab2e19db14dee860a724cbb0e8
+/app/components/myvideo/myvideo.html
+# sw.file.hash: 809434d788b4bda4fc4462e9d0b3fd88ba4a249a
+/app/components/myvideo/myvideo.js
+# sw.file.hash: 43cbe80fedafe7ca17ac4df74f73f33b5bbac2cd
+/app/components/myvideo/myvideo.js.map
+# sw.file.hash: 0e2fd9a9f72d44b5440884a3c2e6ba0025c71aa4
+/app/components/myvideo/myvideo.spec.js
+# sw.file.hash: 801258c69469768c479e490948d98749b43b3f45
+/app/components/myvideo/myvideo.spec.js.map
+# sw.file.hash: d65dbd39241dec4f1b96760259221ab9bfe3d747
+/app/components/myvideo/myvideo.spec.ts
+# sw.file.hash: 2509a28c8e32866db5b8247143d8c6431a25ebac
+/app/components/myvideo/myvideo.ts
+# sw.file.hash: 3304f794a165dbdbbbee244b02dc40dd75471b88
+/app/style.css
+# sw.file.hash: 84161b857f5c547e3699ddfbffc6d8d737542e01
+/favicon.ico
+# sw.file.hash: 7ca4f09736996639746d50feef2cd8ea084bcce5
+/index.html
+# sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+/thirdparty/libs.js
+# sw.file.hash: 8aea28d53164e751dc6f94c0ddd42e2cff49b33e
+/tsconfig.json
+# sw.file.hash: a171ca1d6af67138a27f802ddad984e3c89fed1b
+/typings.d.ts
+# sw.file.hash: d5029b70135282fdf26ad68452ac320aed71ac74
+/vendor/angular2/bundles/angular2-polyfills.js
+# sw.file.hash: 0f8db581a2c4f58604c53935d08947ce7e341547
+/vendor/angular2/bundles/angular2.dev.js
+# sw.file.hash: e161d053cf096f7e43daa9aafc58026972429e6c
+/vendor/angular2/bundles/http.dev.js
+# sw.file.hash: edb629c3fec077046d1455e3e1817669fc6ee888
+/vendor/angular2/bundles/router.dev.js
+# sw.file.hash: 942eb74b23c16f85fb23ccbce6dfa136af7afec4
+/vendor/angular2/bundles/upgrade.dev.js
+# sw.file.hash: 55b3f2ce7b61115d27e50ddab924ab49b04c3209
+/vendor/es6-shim/es6-shim.js
+# sw.file.hash: 6cc7f6dab5e9a1e2b59795ff8766fc028f492b6d
+/vendor/rxjs/bundles/Rx.js
+# sw.file.hash: 064ab212cfd9e125474ae3bbb600c366b31e79cb
+/vendor/systemjs/dist/system-polyfills.js
+# sw.file.hash: 83128f4a4209eb7b16ad0bb729fda6939bc450fc
+/vendor/systemjs/dist/system.src.js

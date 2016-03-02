@@ -1,0 +1,24 @@
+.app{
+    margin: auto;
+    width: 960px;
+}
+
+.navbar-nav>li{
+/*    margin-left : 145px;*/
+}
+
+.btn-group-vertical{
+  float: right;
+}
+
+.row{
+/*  margin : 5% 1% 5% 1%;*/
+}
+
+.baye_top_panel {
+    width: 960px;
+    height: 200px;
+    margin: 0 0 5% 0;
+    padding: 0;
+    background: #FFFFFF url(../images/baye_top_panel_background.jpg) no-repeat;
+}
