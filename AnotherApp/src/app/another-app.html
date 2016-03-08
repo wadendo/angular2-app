@@ -61,7 +61,6 @@
 
 
               <list-medias [video]="videoSelected" [audio]="audioSelected" [photo]="photoSelected"></list-medias>
-
               <div class="panel panel-default">
               <div class="panel-heading">Actualités</div>
                     <div class="panel-body">
@@ -71,7 +70,8 @@
               </div>
           </div>
           <div class="col-md-7">
-              <myvideo></myvideo>
+            <my-audio *ngIf="audioSelected"></my-audio>
+            <myvideo *ngIf="videoSelected"></myvideo>
           </div>
           <div class="col-md-3">
             <div class="btn-group-vertical" role="group" aria-label="...">
