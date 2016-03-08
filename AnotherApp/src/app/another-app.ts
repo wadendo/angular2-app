@@ -10,38 +10,19 @@ import {ListMedias} from './components/list-medias/list-medias';
   providers: [],
   templateUrl: 'app/another-app.html',
   directives: [ROUTER_DIRECTIVES, Myvideo, ListMedias],
-  outputs : ['selectedMedia'],
   pipes: []
 })
 @RouteConfig([
 
 ])
 export class AnotherAppApp {
-  defaultMeaning: number = 42;
-
   videoSelected : boolean;
   audioSelected : boolean;
-  photoSelected : boolean
+  photoSelected : boolean;
 
-  meaningOfLife(meaning?: number) {
-    return `The meaning of life is ${meaning || this.defaultMeaning}`;
-  }
-  selectedMedia : EventEmitter<String> = new EventEmitter<String>();
-  selectMedia(media: String) {
-            if(media === 'video'){
-                this.videoSelected  = true;
-                this.audioSelected = false;
-                this.photoSelected = false;
-            }
-            else if(media === 'audio'){
-                this.videoSelected  = false;
-                this.audioSelected = true;
-                this.photoSelected = false;
-            }
-            else if(media == 'photo'){
-              this.videoSelected  = true;
-              this.audioSelected = false;
-              this.photoSelected = true;
-            }
+  clickedMedia(media: String) {
+      this.videoSelected  = media === 'video';
+      this.audioSelected = media === 'audio';
+      this.photoSelected = media === 'photo';
   }
 }

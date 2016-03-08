@@ -43,11 +43,11 @@
                     <li class="nav-item">
                          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mediathèque</a>
                          <ul class="dropdown-menu">
-                              <li><a href="#" (selectedMedia('video')) = 'clickedMedia($event)'>Vidéos</a></li>
-                              <li><a href="#" (selectedMedia('audio')) = 'clickedMedia($event)'>Audios</a></li>
-                              <li><a href="#" (selectedMedia('photo')) = 'clickedMedia($event)'>Photos</a></li>
+                              <li><a href="#" (click) = 'clickedMedia("video")'>Vidéos</a></li>
+                              <li><a href="#" (click) = 'clickedMedia("audio")'>Audios</a></li>
+                              <li><a href="#" (click) = 'clickedMedia("photo")'>Photos</a></li>
                               <li><a href="#">Archive</a></li>
-                              </ul>
+                          </ul>
                     </li>
              </ul>
           <form class="form-inline pull-xs-right">
@@ -60,22 +60,13 @@
           <div class="col-md-2">
 
 
-              <list-medias></list-medias>
+              <list-medias [video]="videoSelected" [audio]="audioSelected" [photo]="photoSelected"></list-medias>
 
               <div class="panel panel-default">
               <div class="panel-heading">Actualités</div>
                     <div class="panel-body">
                       Le Lorem Ipsum est simplement du faux texte employé dans la
-                       composition et la mise en page avant impression. Le Lorem
-                       Ipsum est le faux texte standard de l'imprimerie depuis les
-                        années 1500, quand un peintre anonyme assembla ensemble des
-                         morceaux de texte pour réaliser un livre spécimen de polices
-                         de texte. Il n'a pas fait que survivre cinq siècles,
-                         mais s'est aussi adapté à la bureautique informatique,
-                         sans que son contenu n'en soit modifié.
-                         Il a été popularisé dans les années 1960
-                          grâce à la vente de feuilles Letraset
-
+                       composition et la mise en page avant impression.
                     </div>
               </div>
           </div>

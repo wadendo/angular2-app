@@ -13,7 +13,7 @@
         </ul>
       </div>
 
-      <div class="btn-group list-audios" *ngIf="videoSelected" *ngIf="audio">
+      <div class="btn-group list-audios"  *ngIf="audio">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Audios <span class="caret"></span>
         </button>
@@ -26,9 +26,9 @@
         </ul>
       </div>
 
-      <div class="btn-group list-audios" *ngIf="videoSelected" *ngIf="photo">
+      <div class="btn-group list-audios" *ngIf="photo">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Audios <span class="caret"></span>
+          Photos <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
           <li><a href="#" (click)="onButtonClick('audio1')">audio 1 </a></li>
@@ -39,3 +39,5 @@
         </ul>
       </div>
 <div>
+
+<!-- Single button -->

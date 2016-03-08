@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, Input} from 'angular2/core';
 
 
 @Component({
@@ -10,33 +10,15 @@ import {Component} from 'angular2/core';
   pipes: []
 })
 export class ListMedias {
-  video : boolean;
-  audio :boolean;
-  photo : boolean;
+  @Input() video : boolean;
+  @Input() audio :boolean;
+  @Input() photo : boolean;
+  
+
   constructor() {}
+
   onButtonClick(video){
     console.log(video);
-  }
-
-  clickedMedia(media){
-    if(media ==='video')
-    {
-      this.video = true;
-      this.audio = false;
-      this.photo = false;
-    }
-    else if(media ==='audio')
-    {
-      this.video = false;
-      this.audio = true;
-      this.photo = false;
-    }
-    else if(media ==='photo')
-    {
-      this.video = false;
-      this.audio = false;
-      this.photo = true;
-    }
   }
 
 }
