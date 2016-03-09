@@ -1,6 +1,6 @@
 import {Component, Input} from 'angular2/core';
 import {MediaService} from '../../services/media-service/media-service';
-
+import 'rxjs/Rx';
 
 @Component({
   selector: 'list-medias',
@@ -15,14 +15,22 @@ export class ListMedias {
   @Input() audio :boolean;
   @Input() photo : boolean;
 
-
-  constructor() {}
+  mediaservice : MediaService;
+  constructor(mediaservice : MediaService) {
+    this.mediaservice = mediaservice;
+    this.getAudiosUrl();
+  }
 
   onButtonClick(video){
     console.log(video);
   }
 
-  getAudiosUrl (mediaservice : MediaService){
-    mediaservice.getAllAudios().map(res => console.log(res.json()));
+  getAudiosUrl( ){
+    this.mediaservice.getAllAudios()
+            .map(data => data.json())
+            .subscribe(data => console.log(data));
+
   }
+
+
 }
