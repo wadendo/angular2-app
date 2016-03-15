@@ -1,4 +1,4 @@
-package hello;
+package application;
 
 /**
  * Created by wadendo on 29/02/16.
