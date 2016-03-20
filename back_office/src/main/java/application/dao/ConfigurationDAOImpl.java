@@ -17,7 +17,7 @@ import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.ServerAddress;
 import com.mongodb.util.JSON;
-import lombok.Data;
+
 /**
  * Created by wadendo on 15/03/16.
  */
