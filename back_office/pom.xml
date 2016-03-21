@@ -52,7 +52,7 @@
         <slf4j.version>1.7.10</slf4j.version>
         <lombok.version>1.16.2</lombok.version>
         <jersey.version>2.17</jersey.version>
-        <mongodb.version>2.10.1</mongodb.version>
+        <mongodb.version>3.0.4</mongodb.version>
     </properties>
 
 

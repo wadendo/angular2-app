@@ -1,8 +1,8 @@
 package application.dao;
 
-import application.pojo.Audio;
+import java.util.List;
 
-import java.util.ArrayList;
+import application.pojo.Audio;
 
 /**
  * Created by wadendo on 15/03/16.
@@ -14,7 +14,7 @@ public interface ConfigurationDAO {
 
     public void delete(String name);
 
-    public ArrayList<Audio> getAll();
+    public List<Audio> getAll();
 
-    public ArrayList<String> loadAllNames();
+    public List<String> loadAllNames();
 }

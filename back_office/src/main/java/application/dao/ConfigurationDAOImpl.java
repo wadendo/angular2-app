@@ -3,6 +3,7 @@ package application.dao;
 import java.io.IOException;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.List;
 
 import application.pojo.Audio;
 
@@ -68,7 +69,7 @@ public class ConfigurationDAOImpl implements ConfigurationDAO {
         ObjectMapper objectMapper = new ObjectMapper();
         //convert json string to object
         Audio audio = null;
-        while (result.hasNext())
+        while (result.hasNext()) {
             try {
 
 
@@ -77,6 +78,7 @@ public class ConfigurationDAOImpl implements ConfigurationDAO {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
         return audio;
 
     }
@@ -104,12 +106,12 @@ public class ConfigurationDAOImpl implements ConfigurationDAO {
     }
 
     @Override
-    public ArrayList<String> loadAllNames() {
-        ArrayList<String> allConfigurationNames = new ArrayList<>();
+    public List<String> loadAllNames() {
+        List<String> allConfigurationNames = new ArrayList<>();
 
         DBCursor dbcursor;
         dbcursor = collection.find();
-        Audio audio = new Audio();
+        Audio audio;
         while (dbcursor.hasNext()) {
             audio = (Audio) dbcursor.next();
             allConfigurationNames.add(audio.getName());
