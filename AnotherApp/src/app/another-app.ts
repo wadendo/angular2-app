@@ -4,13 +4,14 @@ import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {Myvideo} from './components/myvideo/myvideo';
 import {ListMedias} from './components/list-medias/list-medias';
 import {MyAudio} from './components/my-audio/my-audio';
+import {MyGallery} from './components/my-gallery/my-gallery';
 
 
 @Component({
   selector: 'another-app-app',
   providers: [],
   templateUrl: 'app/another-app.html',
-  directives: [ROUTER_DIRECTIVES, Myvideo, ListMedias,MyAudio],
+  directives: [ROUTER_DIRECTIVES, Myvideo, ListMedias,MyAudio, MyGallery],
   pipes: []
 })
 @RouteConfig([

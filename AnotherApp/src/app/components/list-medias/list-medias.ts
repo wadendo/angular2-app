@@ -25,7 +25,7 @@ export class ListMedias {
     console.log(video);
   }
 
-  getAudiosUrl( ){
+  getAudiosUrl(){
     this.mediaservice.getAllAudios()
             .map(data => data.json())
             .subscribe(data => console.log(data));
