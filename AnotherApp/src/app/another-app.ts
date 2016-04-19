@@ -15,7 +15,9 @@ import {MyGallery} from './components/my-gallery/my-gallery';
   pipes: []
 })
 @RouteConfig([
-
+  {path : '/video',name:'Video',component:Myvideo},
+  {path : '/audio',name:'Audio', component:MyAudio},
+  {path : '/photo',name:'Photo',component:MyGallery}
 ])
 export class AnotherAppApp {
   videoSelected : boolean;

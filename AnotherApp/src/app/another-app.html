@@ -43,10 +43,14 @@
                     <li class="nav-item">
                          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mediathèque</a>
                          <ul class="dropdown-menu">
-                              <li><a href="#" (click) = 'clickedMedia("video")'>Vidéos</a></li>
+                              <!--li><a href="#" (click) = 'clickedMedia("video")'>Vidéos</a></li>
                               <li><a href="#" (click) = 'clickedMedia("audio")'>Audios</a></li>
                               <li><a href="#" (click) = 'clickedMedia("photo")'>Photos</a></li>
-                              <li><a href="#">Archive</a></li>
+                              <li><a href="#">Archive</a></li-->
+                              <li><a  [routerLink]="['Video']">Vidéos</a></li>
+                              <li><a  [routerLink]="['Audio']">Audios</a></li>
+                              <li><a  [routerLink]="['Photo']">Photos</a></li>
+                              <li><a >Archive</a></li>
                           </ul>
                     </li>
              </ul>
@@ -70,9 +74,10 @@
               </div>
           </div>
           <div class="col-md-7">
-            <my-audio *ngIf="audioSelected"></my-audio>
+            <!--my-audio *ngIf="audioSelected"></my-audio>
             <myvideo *ngIf="videoSelected"></myvideo>
-            <my-gallery *ngIf="photoSelected"></my-gallery>
+            <my-gallery *ngIf="photoSelected"></my-gallery-->
+              <router-outlet></router-outlet>
           </div>
           <div class="col-md-3">
             <div class="btn-group-vertical" role="group" aria-label="...">
@@ -87,8 +92,3 @@
 
       <div>
 </div>
-
-
-
-
-<router-outlet></router-outlet>
