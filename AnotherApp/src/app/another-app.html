@@ -9,7 +9,7 @@
                     <li class="nav-item">
                          <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le mouridisme</a>
                          <ul class="dropdown-menu">
-                              <li><a href="#">Mouridisme</a></li>
+                              <li><a [routerLink]="['Mouridetext']">Mouridisme</a></li>
                               <li><a href="#">L'oeuvre de Serigne Touba</a></li>
                               <li><a href="#">Le mouridisme</a></li>
                               <li><a href="#">Ville sainte de Touba</a></li>
@@ -47,9 +47,9 @@
                               <li><a href="#" (click) = 'clickedMedia("audio")'>Audios</a></li>
                               <li><a href="#" (click) = 'clickedMedia("photo")'>Photos</a></li>
                               <li><a href="#">Archive</a></li-->
-                              <li><a  [routerLink]="['Video']">Vidéos</a></li>
-                              <li><a  [routerLink]="['Audio']">Audios</a></li>
-                              <li><a  [routerLink]="['Photo']">Photos</a></li>
+                              <li><a  [routerLink]="['Video']" (click) = 'clickedMedia("video")'>Vidéos</a></li>
+                              <li><a  [routerLink]="['Audio']" (click) = 'clickedMedia("audio")'>Audios</a></li>
+                              <li><a  [routerLink]="['Photo']" (click) = 'clickedMedia("photo")'>Photos</a></li>
                               <li><a >Archive</a></li>
                           </ul>
                     </li>

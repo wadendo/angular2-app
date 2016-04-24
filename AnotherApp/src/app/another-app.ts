@@ -5,19 +5,21 @@ import {Myvideo} from './components/myvideo/myvideo';
 import {ListMedias} from './components/list-medias/list-medias';
 import {MyAudio} from './components/my-audio/my-audio';
 import {MyGallery} from './components/my-gallery/my-gallery';
+import {MouridismeText} from './components/mouridisme-text/mouridisme-text';
 
 
 @Component({
   selector: 'another-app-app',
   providers: [],
   templateUrl: 'app/another-app.html',
-  directives: [ROUTER_DIRECTIVES, Myvideo, ListMedias,MyAudio, MyGallery],
+  directives: [ROUTER_DIRECTIVES, Myvideo, ListMedias,MyAudio, MyGallery,MouridismeText],
   pipes: []
 })
 @RouteConfig([
   {path : '/video',name:'Video',component:Myvideo},
   {path : '/audio',name:'Audio', component:MyAudio},
-  {path : '/photo',name:'Photo',component:MyGallery}
+  {path : '/photo',name:'Photo',component:MyGallery},
+  {path : '/mouridetext',name:'Mouridetext',component:MouridismeText}
 ])
 export class AnotherAppApp {
   videoSelected : boolean;
