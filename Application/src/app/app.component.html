@@ -9,7 +9,7 @@
                     <li class="nav-item">
                          <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le mouridisme</a>
                          <ul class="dropdown-menu">
-                              <li><a [routerLink]="['Mouridetext']">Mouridisme</a></li>
+                              <li><a [routerLink]="['/mourideText']">Mouridisme</a></li>
                               <li><a href="#">L'oeuvre de Serigne Touba</a></li>
                               <li><a href="#">Le mouridisme</a></li>
                               <li><a href="#">Ville sainte de Touba</a></li>
@@ -37,19 +37,16 @@
                              <li><a href="#">Makarimal Akhlaq Touba</a></li>
                              <li><a href="#">Boolo Moy Dolé (B.M.D)</a></li>
                              <li><a href="#">Kourel Sokhna Mai L. Mbacké</a></li>
-                              <li><a href="#">Kourel Kourel Touba Khadim Ndao</a></li>
+                              <li><a href="#">Kourel Touba Khadim Ndao</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mediathèque</a>
                          <ul class="dropdown-menu">
-                              <!--li><a href="#" (click) = 'clickedMedia("video")'>Vidéos</a></li>
-                              <li><a href="#" (click) = 'clickedMedia("audio")'>Audios</a></li>
-                              <li><a href="#" (click) = 'clickedMedia("photo")'>Photos</a></li>
-                              <li><a href="#">Archive</a></li-->
-                              <li><a  [routerLink]="['Video']" (click) = 'clickedMedia("video")'>Vidéos</a></li>
-                              <li><a  [routerLink]="['Audio']" (click) = 'clickedMedia("audio")'>Audios</a></li>
-                              <li><a  [routerLink]="['Photo']" (click) = 'clickedMedia("photo")'>Photos</a></li>
+
+                              <li><a  [routerLink]="['/video']" (click) = 'clickedMedia("video")'>Vidéos</a></li>
+                              <li><a  [routerLink]="['/audio']" (click) = 'clickedMedia("audio")'>Audios</a></li>
+                              <li><a  [routerLink]="['/photo']" (click) = 'clickedMedia("photo")'>Photos</a></li>
                               <li><a >Archive</a></li>
                           </ul>
                     </li>
@@ -64,7 +61,7 @@
           <div class="col-md-2">
 
 
-              <list-medias [video]="videoSelected" [audio]="audioSelected" [photo]="photoSelected"></list-medias>
+              <app-list-medias [video]="videoSelected" [audio]="audioSelected" [photo]="photoSelected"></app-list-medias>
               <div class="panel panel-default">
               <div class="panel-heading">Actualités</div>
                     <div class="panel-body">
@@ -74,19 +71,19 @@
               </div>
           </div>
           <div class="col-md-7">
-            <!--my-audio *ngIf="audioSelected"></my-audio>
-            <myvideo *ngIf="videoSelected"></myvideo>
-            <my-gallery *ngIf="photoSelected"></my-gallery-->
+            <app-my-audio *ngIf="audioSelected"></app-my-audio>
+            <app-my-video *ngIf="videoSelected"></app-my-video>
+            <app-my-gallery *ngIf="photoSelected"></app-my-gallery>
               <router-outlet></router-outlet>
           </div>
           <div class="col-md-3">
             <div class="btn-group-vertical" role="group" aria-label="...">
-                   <button class="btn btn-primary" [routerLink]="['Register']" >
+                   <a class="btn btn-primary"  [routerLink]="['/register']" >
                      Inscription
-                  </button>
-                  <button [routerLink]="['Login']"class="btn btn-primary" >
+                  </a>
+                  <a [routerLink]="['/login']" class="btn btn-primary" >
                     Administration
-                 </button>
+                 </a>
             </div>
           </div>
 

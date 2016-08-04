@@ -1,0 +1,31 @@
+<div class="container">
+    <h1></h1>
+    <form>
+      <div class="form-group">
+        <label for="nom">Nom</label>
+
+        <select [(ngModel)]="objValue1">
+                <option *ngFor="#situation of situations" [value]="situation">{{situation}}</option>
+        </select>
+
+        <input type="text" [(ngModel)]="nom" class="form-control" ngControl="nom" required>
+
+
+        <label for="prenom">Prenom</label>
+        <input type="text"  [(ngModel)]="prenom" class="form-control" ngControl="prenom" required>
+
+
+        <label for="motdepasse">Date de naissance</label>
+        <input type="date"  [(ngModel)]="birth_day" class="form-control" ngControl="birth_day" required>
+
+
+        <label for="motdepasse">Ville</label>
+        <input type="text"  [(ngModel)]="town" class="form-control" ngControl="town" required>
+
+
+        <label for="motdepasse">Dahira</label>
+        <input type="text"  [(ngModel)]="dahira" class="form-control" ngControl="dahira" required>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>

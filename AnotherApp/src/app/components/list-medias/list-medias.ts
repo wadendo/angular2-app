@@ -12,7 +12,7 @@ import 'rxjs/Rx';
 })
 export class ListMedias {
   @Input() video : boolean;
-  @Input() audio :boolean;
+  @Input() audio : boolean;
   @Input() photo : boolean;
 
   mediaservice : MediaService;
