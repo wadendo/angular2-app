@@ -4,12 +4,17 @@ import {Http, HTTP_PROVIDERS} from '@angular/http';
 @Injectable()
 export class MediaServiceService {
 
-  http : Http;
- constructor(http :Http) {
-   this.http = http;
+media : string;
+ constructor() {
+
  }
-  getAllAudios(){
-   return this.http.get('/app/files/audios.json');
+ setMedia(media : string){
+   this.media = media;
+   console.log(this.media);
+ }
+
+ getMedia(){
+   return this.media;
  }
 
 }
