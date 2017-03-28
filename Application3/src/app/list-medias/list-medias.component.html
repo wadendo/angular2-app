@@ -1,0 +1,46 @@
+<!-- Single button -->
+
+<div class="list-medias">
+
+
+      <div class="btn-group list-videos" *ngIf="video">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Videos <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" >
+           <div *ngFor="let video of videos | async">
+              <li><a href="/video" (click)="onButtonClick(video.name)">{{video.name}} </a></li>
+          </div>
+
+        </ul>
+      </div>
+
+      <div class="btn-group list-audios"  *ngIf="audio">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Audios <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" >
+          <li><a href="#" (click)="onButtonClick('audio1')">audio 1 </a></li>
+          <li><a href="#" (click)="onButtonClick('audio2')">audio 2</a></li>
+          <li><a href="#" (click)="onButtonClick('audio3')">audio 3</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group list-audios" *ngIf="photo">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Photos <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#" (click)="onButtonClick('album1')">album 1 </a></li>
+          <li><a href="#" (click)="onButtonClick('album2')">album 2</a></li>
+          <li><a href="#" (click)="onButtonClick('album3')">album 3</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+
+<div>
+
+<!-- Single button -->

@@ -1,0 +1,14 @@
+<div class="container">
+    <h1></h1>
+    <form>
+      <div class="form-group">
+        <label for="identifiant">Identifiant</label>
+        <input type="text" [(ngModel)]="model.identifiant" class="form-control" ngControl="identifiant" required!-->
+      </div>
+      <div class="form-group">
+        <label for="motdepasse">Mot de passe</label>
+        <input type="text"  [(ngModel)]="model.mdp" class="form-control" ngControl="mdp" required>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>

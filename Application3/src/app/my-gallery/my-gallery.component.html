@@ -1,0 +1,9 @@
+<div id="slider">
+    <figure style="width=20%">
+        <div *ngFor="let p of photos | async">
+
+              <img [src]="p.$value"  alt="">
+              
+        </div>
+    </figure>
+</div>
